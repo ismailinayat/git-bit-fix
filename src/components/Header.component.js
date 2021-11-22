@@ -1,20 +1,12 @@
-import React, {Component} from 'react';
+
+import React from 'react'
 import {Link} from "react-router-dom";
 
-class HeaderComponent extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                <header>
+function HeaderComponent(props) {
+    return (
+        <div>
+            <header>
                     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                         <div> <a href="http://www.techvology.net" className="navbar-brand">Worktrial Management App</a> </div>
                         <div className="topnav">
@@ -25,9 +17,10 @@ class HeaderComponent extends Component {
                     </nav>
 
                 </header>
-            </div>
-        );
-    }
+        </div>
+    )
 }
+
+
 
 export default HeaderComponent;
